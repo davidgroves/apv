@@ -21,7 +21,7 @@ $ apv --input out.json --show
 
 ## Usage.
 
-- Put the contents of [ansible/ansible.cfg] into your ansible.cfg file. If you don't have one, you
+- Put the contents of [ansible/ansible.cfg](ansible/ansible.cfg) into your ansible.cfg file. If you don't have one, you
 can put this in the directory you run the playbook from.
 - Run `ansible-playbook playbook.yaml | tee out.json`. This will run the playbook, outputting
 to both the screen and the out.json file.
