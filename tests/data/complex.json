@@ -1,0 +1,238 @@
+{
+    "custom_stats": {},
+    "global_custom_stats": {},
+    "plays": [
+        {
+            "play": {
+                "duration": {
+                    "end": "2024-09-20T14:30:00.000000Z",
+                    "start": "2024-09-20T13:00:00.000000Z"
+                },
+                "id": "c87f5402-5efd-8c06-675c-000000000001",
+                "name": "Build and configure computer system",
+                "path": "CODE/ansible-profile-visualiser/ansible/playbook.yaml:2"
+            },
+            "tasks": [
+                {
+                    "hosts": {
+                        "clive": {
+                            "action": "gather_facts"
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2024-09-20T13:00:05.000000Z",
+                            "start": "2024-09-20T13:00:00.000000Z"
+                        },
+                        "id": "c87f5402-5efd-8c06-675c-000000000002",
+                        "name": "Gathering Facts",
+                        "path": "CODE/ansible-profile-visualiser/ansible/playbook.yaml:2"
+                    }
+                },
+                {
+                    "hosts": {
+                        "clive": {
+                            "action": "install_hardware"
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2024-09-20T13:00:20.000000Z",
+                            "start": "2024-09-20T13:00:05.000000Z"
+                        },
+                        "id": "c87f5402-5efd-8c06-675c-000000000003",
+                        "name": "Install CPU",
+                        "path": "CODE/ansible-profile-visualiser/ansible/playbook.yaml:7"
+                    }
+                },
+                {
+                    "hosts": {
+                        "alice": {
+                            "action": "install_hardware"
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2024-09-20T13:00:24.000000Z",
+                            "start": "2024-09-20T13:00:05.000000Z"
+                        },
+                        "id": "c87f5402-5efd-8c06-675c-000000000003",
+                        "name": "Install CPU",
+                        "path": "CODE/ansible-profile-visualiser/ansible/playbook.yaml:7"
+                    }
+                },
+                {
+                    "hosts": {
+                        "bob": {
+                            "action": "install_hardware"
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2024-09-20T13:00:31.000000Z",
+                            "start": "2024-09-20T13:00:09.000000Z"
+                        },
+                        "id": "c87f5402-5efd-8c06-675c-000000000003",
+                        "name": "Install CPU",
+                        "path": "CODE/ansible-profile-visualiser/ansible/playbook.yaml:7"
+                    }
+                },
+                {
+                    "hosts": {
+                        "clive": {
+                            "action": "install_hardware"
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2024-09-20T13:00:35.000000Z",
+                            "start": "2024-09-20T13:00:20.000000Z"
+                        },
+                        "id": "c87f5402-5efd-8c06-675c-000000000004",
+                        "name": "Install RAM",
+                        "path": "CODE/ansible-profile-visualiser/ansible/playbook.yaml:11"
+                    }
+                },
+                {
+                    "hosts": {
+                        "alice": {
+                            "action": "install_hardware"
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2024-09-20T13:00:43.000000Z",
+                            "start": "2024-09-20T13:00:39.000000Z"
+                        },
+                        "id": "c87f5402-5efd-8c06-675c-000000000004",
+                        "name": "Install RAM",
+                        "path": "CODE/ansible-profile-visualiser/ansible/playbook.yaml:11"
+                    }
+                },
+                {
+                    "hosts": {
+                        "bob": {
+                            "action": "install_hardware"
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2024-09-20T13:00:44.000000Z",
+                            "start": "2024-09-20T13:00:37.000000Z"
+                        },
+                        "id": "c87f5402-5efd-8c06-675c-000000000004",
+                        "name": "Install RAM",
+                        "path": "CODE/ansible-profile-visualiser/ansible/playbook.yaml:11"
+                    }
+                },
+                {
+                    "hosts": {
+                        "clive": {
+                            "action": "install_hardware"
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2024-09-20T13:00:50.000000Z",
+                            "start": "2024-09-20T13:00:35.000000Z"
+                        },
+                        "id": "c87f5402-5efd-8c06-675c-000000000005",
+                        "name": "Install SSD",
+                        "path": "CODE/ansible-profile-visualiser/ansible/playbook.yaml:15"
+                    }
+                },
+                {
+                    "hosts": {
+                        "alice": {
+                            "action": "install_hardware"
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2024-09-20T13:00:54.000000Z",
+                            "start": "2024-09-20T13:00:36.000000Z"
+                        },
+                        "id": "c87f5402-5efd-8c06-675c-000000000005",
+                        "name": "Install SSD",
+                        "path": "CODE/ansible-profile-visualiser/ansible/playbook.yaml:15"
+                    }
+                },
+                {
+                    "hosts": {
+                        "bob": {
+                            "action": "install_hardware"
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2024-09-20T13:00:51.100Z",
+                            "start": "2024-09-20T13:00:34.300000Z"
+                        },
+                        "id": "c87f5402-5efd-8c06-675c-000000000005",
+                        "name": "Install SSD",
+                        "path": "CODE/ansible-profile-visualiser/ansible/playbook.yaml:15"
+                    }
+                },
+                {
+                    "hosts": {
+                        "clive": {
+                            "action": "install_os"
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2024-09-20T13:01:10.000000Z",
+                            "start": "2024-09-20T13:00:50.000000Z"
+                        },
+                        "id": "c87f5402-5efd-8c06-675c-000000000006",
+                        "name": "Install Operating System",
+                        "path": "CODE/ansible-profile-visualiser/ansible/playbook.yaml:19"
+                    }
+                },
+                {
+                    "hosts": {
+                        "alice": {
+                            "action": "install_os"
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2024-09-20T13:01:10.000000Z",
+                            "start": "2024-09-20T13:00:50.000000Z"
+                        },
+                        "id": "c87f5402-5efd-8c06-675c-000000000006",
+                        "name": "Install Operating System",
+                        "path": "CODE/ansible-profile-visualiser/ansible/playbook.yaml:19"
+                    }
+                },
+                {
+                    "hosts": {
+                        "bob": {
+                            "action": "configure_network"
+                        }
+                    },
+                    "task": {
+                        "duration": {
+                            "end": "2024-09-20T13:01:25.000000Z",
+                            "start": "2024-09-20T13:01:10.000000Z"
+                        },
+                        "id": "c87f5402-5efd-8c06-675c-000000000007",
+                        "name": "Setup Network Label Too Long Force Truncation",
+                        "path": "CODE/ansible-profile-visualiser/ansible/playbook.yaml:23"
+                    }
+                }
+            ]
+        }
+    ],
+    "stats": {
+        "localhost": {
+            "changed": 10,
+            "failures": 0,
+            "ignored": 0,
+            "ok": 10,
+            "rescued": 0,
+            "skipped": 0,
+            "unreachable": 0
+        }
+    }
+}

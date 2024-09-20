@@ -1,0 +1,43 @@
+[project]
+name = "ansible_profile_visualiser"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "altair>=5.4.1",
+    "pandas>=2.2.2",
+    "streamlit>=1.38.0",
+    "typed-argument-parser>=1.10.1",
+    "vl-convert-python>=1.6.1",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "ansible-lint>=24.7.0",
+    "ansible-profile-visualiser",
+    "ansible>=10.4.0",
+    "pandas-stubs>=2.2.2.240909",
+    "pytest>=8.3.3",
+    "ruff>=0.6.5",
+    "will-not-work-on-windows-try-from-wsl-instead==0.1.0",
+]
+
+[tool.uv.sources]
+ansible-profile-visualiser = { workspace = true }
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
+
+[project.scripts]
+apv = "apv:main"
+
+
+[tool.setuptools.package-data]
+ansible_profile_visualiser = ["py.typed"]
+
+[options.package_data]
+apv = ["py.typed"]
+

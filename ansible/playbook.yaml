@@ -1,0 +1,25 @@
+---
+- name: Do sleeps.
+  hosts: localhost
+  remote_user: root
+
+  tasks:
+  - name: Sleep for 1 second.
+    ansible.builtin.pause:
+      seconds: 1
+
+  - name: Sleep for 2 seconds.
+    ansible.builtin.pause:
+      seconds: 2
+
+  - name: Sleep for 3 seconds (A)
+    ansible.builtin.command: "/bin/sleep 3"
+    async: 15
+    poll: 0
+    register: async_sleep_a
+
+  - name: Sleep for 3 seconds (B)
+    ansible.builtin.command: "/bin/sleep 3"
+    async: 15
+    poll: 0
+    register: async_sleep_b
