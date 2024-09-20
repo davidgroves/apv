@@ -26,7 +26,7 @@ can put this in the directory you run the playbook from.
 - Run `ansible-playbook playbook.yaml | tee out.json`. This will run the playbook, outputting
 to both the screen and the out.json file.
 - Use `apv --input <filename> --show` to generate the timeline and display on a local browser.
-- Use `apv --input <filename> --output <filename>` to generate an HTML with the chart instead. 
+- Use `apv --input <filename> --output <filename>` to generate an HTML file with the chart instead. 
 
 ---
 
