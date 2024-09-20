@@ -12,7 +12,7 @@ To allow you to profile an ansible playbook and determine how long each task is 
 
 ## Example Usage.
 
-- Merge the [ansible/ansible.cfg] into your `~/ansible.cfg` file, or copy it if you don't have one.
+- Merge the [ansible/ansible.cfg](ansible/ansible.cfg) into your `~/ansible.cfg` file, or copy it if you don't have one.
 
 ```shell
 $ ansible-playbook <playbook> | tee out.json
