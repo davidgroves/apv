@@ -49,7 +49,7 @@ extract the data from the output.
 - Extracting JSON from the a`nsible-playbook | tee out.json` output is not robust. We just look for '{' and '}' characters.
 - The dataclass Task has a pair of derived properties, but they are currently generated at init time to work with Pandas.
 - The Y axis could be formatted nicer.
-- Text formatting has wierd instances of `â€¦` characters. Likely related to encoding. See [John Cook Post](https://www.johndcook.com/blog/2024/01/11/a-caret-euro-trademark/).
+- Text formatting has wierd instances of `â€¦` characters. Likely related to encoding. See [John Cook Post](https://www.johndcook.com/blog/2024/01/11/a-caret-euro-trademark/). Upstream patch send to the altair project.
 
 ## Generating the JSON.
 
