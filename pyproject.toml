@@ -5,7 +5,8 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "altair>=5.4.1",
+  #    "altair>=5.4.1",
+    "altair",
     "pandas>=2.2.2",
     "streamlit>=1.38.0",
     "typed-argument-parser>=1.10.1",
@@ -25,6 +26,7 @@ dev-dependencies = [
 
 [tool.uv.sources]
 ansible-profile-visualiser = { workspace = true }
+altair = { path = "/home/dwg/CODE/altair/" }
 
 [tool.pytest.ini_options]
 pythonpath = [

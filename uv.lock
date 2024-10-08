@@ -3,18 +3,57 @@ requires-python = ">=3.12"
 
 [[package]]
 name = "altair"
-version = "5.4.1"
-source = { registry = "https://pypi.org/simple" }
+version = "5.5.0.dev0"
+source = { directory = "../altair" }
 dependencies = [
     { name = "jinja2" },
     { name = "jsonschema" },
     { name = "narwhals" },
     { name = "packaging" },
-    { name = "typing-extensions", marker = "python_full_version < '3.13'" },
+    { name = "typing-extensions", marker = "python_full_version < '3.14'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ae/09/38904138a49f29e529b61b4f39954a6837f443d828c1bc57814be7bd4813/altair-5.4.1.tar.gz", hash = "sha256:0ce8c2e66546cb327e5f2d7572ec0e7c6feece816203215613962f0ec1d76a82", size = 636465 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/9b/52/4a86a4fa1cc2aae79137cc9510b7080c3e5aede2310d14fae5486feec7f7/altair-5.4.1-py3-none-any.whl", hash = "sha256:0fb130b8297a569d08991fb6fe763582e7569f8a04643bbd9212436e3be04aef", size = 658150 },
+
+[package.metadata]
+requires-dist = [
+    { name = "altair-tiles", marker = "extra == 'all'", specifier = ">=0.3.0" },
+    { name = "anywidget", marker = "extra == 'all'", specifier = ">=0.9.0" },
+    { name = "docutils", marker = "extra == 'doc'" },
+    { name = "geopandas", marker = "extra == 'dev'" },
+    { name = "hatch", marker = "extra == 'dev'" },
+    { name = "ibis-framework", extras = ["polars"], marker = "extra == 'dev'" },
+    { name = "ipython", extras = ["kernel"], marker = "extra == 'dev'" },
+    { name = "jinja2" },
+    { name = "jinja2", marker = "extra == 'doc'" },
+    { name = "jsonschema", specifier = ">=3.0" },
+    { name = "mistune", marker = "extra == 'dev'" },
+    { name = "mypy", marker = "extra == 'dev'" },
+    { name = "myst-parser", marker = "extra == 'doc'" },
+    { name = "narwhals", specifier = ">=1.5.2" },
+    { name = "numpy", marker = "extra == 'all'" },
+    { name = "numpydoc", marker = "extra == 'doc'" },
+    { name = "packaging" },
+    { name = "pandas", marker = "extra == 'all'", specifier = ">=0.25.3" },
+    { name = "pandas", marker = "extra == 'dev'", specifier = ">=0.25.3" },
+    { name = "pandas-stubs", marker = "extra == 'dev'" },
+    { name = "pillow", marker = "extra == 'doc'", specifier = ">=9,<10" },
+    { name = "polars", marker = "extra == 'dev'", specifier = ">=0.20.3" },
+    { name = "pyarrow", marker = "extra == 'all'", specifier = ">=11" },
+    { name = "pydata-sphinx-theme", marker = "extra == 'doc'", specifier = ">=0.14.1" },
+    { name = "pytest", marker = "extra == 'dev'" },
+    { name = "pytest-cov", marker = "extra == 'dev'" },
+    { name = "pytest-xdist", extras = ["psutil"], marker = "extra == 'dev'", specifier = "~=3.5" },
+    { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.6.0" },
+    { name = "scipy", marker = "extra == 'doc'" },
+    { name = "sphinx", marker = "extra == 'doc'" },
+    { name = "sphinx-copybutton", marker = "extra == 'doc'" },
+    { name = "sphinx-design", marker = "extra == 'doc'" },
+    { name = "sphinxext-altair", marker = "extra == 'doc'" },
+    { name = "types-jsonschema", marker = "extra == 'dev'" },
+    { name = "types-setuptools", marker = "extra == 'dev'" },
+    { name = "typing-extensions", marker = "python_full_version < '3.14'", specifier = ">=4.10.0" },
+    { name = "vega-datasets", marker = "extra == 'all'", specifier = ">=0.9.0" },
+    { name = "vegafusion", extras = ["embed"], marker = "extra == 'all'", specifier = ">=1.6.6" },
+    { name = "vl-convert-python", marker = "extra == 'all'", specifier = ">=1.6.0" },
 ]
 
 [[package]]
@@ -111,7 +150,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "altair", specifier = ">=5.4.1" },
+    { name = "altair", directory = "../altair" },
     { name = "pandas", specifier = ">=2.2.2" },
     { name = "streamlit", specifier = ">=1.38.0" },
     { name = "typed-argument-parser", specifier = ">=1.10.1" },
